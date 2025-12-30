@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="ActionDelegate/ActionDelegate.csproj" />
+  <Project Path="CallbackDelegate/CallbackDelegate.csproj" />
+  <Project Path="FuncDelegate/FuncDelegate.csproj" />
+  <Project Path="MethodDelegate/MethodDelegate.csproj" />
+  <Project Path="MulticastDelegate/MulticastDelegate.csproj" />
+  <Project Path="PredicateDelegate/PredicateDelegate.csproj" />
+</Solution>
