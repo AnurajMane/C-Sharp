@@ -1,0 +1,38 @@
+﻿@model studobjcontrollertoview.Models.Student
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Student Data Pass";
+
+}
+
+<h2>Student Details</h2>
+<hr />
+
+<div class="card" style="width: 18rem;">
+        <div class="card-body">
+        <h5 class="card-title @Model.name</h5><p class="card-text">
+            ID : @Model.id <br />
+            Name : @Model.name <br />
+            Age : @Model.email <br />
+            City : @Model.phone <br />
+            Country : @Model.address <br />
+            Marks : @Model.marks <br />
+        </p>
+        </h5>
+
+
+        @if (Model.marks >= 40)
+        {
+            <span class="badge bg-success">Status: Passed</span>
+        }
+        else
+        {
+            <span class="badge bg-danger">Status: Failed</span>
+        }
+
+
+        </div>
+</div>

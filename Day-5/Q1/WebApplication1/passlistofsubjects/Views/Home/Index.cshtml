@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "All Subjects";
+}
+
+@{
+    List<string> subjects = ViewBag.SubjectsList as List<string>;
+
+    for(int i = 0; i < subjects.Count; i++)
+    {
+        <p>@subjects[i]</p>
+    }
+
+
+}
+
+<hr />
+
+
+<h1>Course Subjects</h1>
+@{
+    List<string> list = ViewBag.SubjectsList as List<string>;
+
+<ul>
+    @if (list != null)
+    {
+        @foreach (var subject in list)
+        {
+            <li>@subject</li>
+        }
+    }
+    else
+    {
+        <li>No subjects found.</li>
+    }
+</ul>
+}
+@* <div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div> *@
